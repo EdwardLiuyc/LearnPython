@@ -40,6 +40,7 @@ def merge_sort(input_nums):
 
 if __name__ == '__main__':
     init_nums = num_set_for_sort()
+
     # start = time.process_time()
     init_nums = merge_sort(init_nums)
     # end = time.process_time()

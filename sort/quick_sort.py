@@ -28,7 +28,7 @@ def quick_sort_inplace(input_nums):
     if count <= 1:
         return nums
     else:
-        i = 1
+        i = 0
         j = count - 1
         div = nums[0]
         while i != j:
@@ -44,10 +44,10 @@ def quick_sort_inplace(input_nums):
 
         less = nums[:i]
         larger = nums[i+1:]
-        less = quick_sort(less)
-        larger = quick_sort(larger)
+        less = quick_sort_inplace(less)
+        larger = quick_sort_inplace(larger)
         less.append(nums[i])
-        less.extend(larger)
+        less += larger
         return less
 
 
