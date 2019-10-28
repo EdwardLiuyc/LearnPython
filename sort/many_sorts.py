@@ -1,4 +1,5 @@
 from bubble_sort import bubble_sort
+from comb_sort import comb_sort
 from quick_sort import quick_sort
 from quick_sort import quick_sort_inplace
 from select_sort import select_sort
@@ -27,7 +28,7 @@ if __name__ == '__main__':
 
     print('bubble sort:')
     # print(init_nums)
-    bubble_sort_nums = bubble_sort(init_nums)
+    bubble_sort_nums = bubble_sort(init_nums, True)
     print(bubble_sort_nums)
 
     print('select sort:')
@@ -39,3 +40,8 @@ if __name__ == '__main__':
     # print(init_nums)
     merge_sort_nums = merge_sort(init_nums)
     print(merge_sort_nums)
+
+    print('comb sort:')
+    # print(init_nums)
+    comb_sort_nums = comb_sort(init_nums, True)
+    print(comb_sort_nums)
